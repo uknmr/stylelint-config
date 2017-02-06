@@ -1,10 +1,7 @@
 module.exports = {
   "rules": {
-    "at-rule-blacklist": string|[],
-    "at-rule-empty-line-before": "always"|"never",
-    "at-rule-name-case": "lower"|"upper",
-    "at-rule-name-newline-after": "always"|"always-multi-line",
-    "at-rule-name-space-after": "always"|"always-single-line",
+    "at-rule-name-case": "lower",
+    "at-rule-name-space-after": "always-single-line",
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
