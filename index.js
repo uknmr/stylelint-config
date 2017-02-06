@@ -2,11 +2,9 @@ module.exports = {
   "rules": {
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
-    "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
-    "at-rule-whitelist": string|[],
-    "block-closing-brace-empty-line-before": "always-multi-line"|"never",
+    "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
     "block-closing-brace-newline-before": "always"|"always-multi-line"|"never-multi-line",
     "block-closing-brace-space-after": "always"|"always-single-line"|"never-single-line"|"always-multi-line"|"never-multi-line",
