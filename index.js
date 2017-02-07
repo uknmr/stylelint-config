@@ -20,11 +20,17 @@ module.exports = {
       ignore: ["stylelint-commands"],
     }],
     "comment-no-empty": true,
-    "comment-whitespace-inside": "always"|"never",
-    "comment-word-blacklist": string|[],
-    "custom-media-pattern": string,
-    "custom-property-empty-line-before": "always"|"never",
-    "custom-property-pattern": string,
+    "comment-whitespace-inside": "always",
+    "custom-property-empty-line-before": ["always", {
+      except: [
+        "after-custom-property",
+        "first-nested",
+      ],
+      ignore:[
+        "after-comment",
+        "inside-single-line-block",
+      ],
+    }],
     "declaration-bang-space-after": "always"|"never",
     "declaration-bang-space-before": "always"|"never",
     "declaration-block-no-duplicate-properties": true,
