@@ -44,15 +44,20 @@ module.exports = {
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": 1,
     "declaration-block-trailing-semicolon": "always",
-    "declaration-colon-newline-after": "always"|"always-multi-line",
-    "declaration-colon-space-after": "always"|"never"|"always-single-line",
-    "declaration-colon-space-before": "always"|"never",
-    "declaration-empty-line-before": "always"|"never",
+    "declaration-colon-newline-after": "always-multi-line",
+    "declaration-colon-space-after": "always-single-line",
+    "declaration-colon-space-before": "never",
+    "declaration-empty-line-before": ["always", {
+      except: [
+        "first-nested",
+      ],
+      ignore: [
+        "after-comment",
+        "after-declaration",
+        "inside-single-line-block",
+      ]
+    }],
     "declaration-no-important": true,
-    "declaration-property-unit-blacklist": {},
-    "declaration-property-unit-whitelist": {},
-    "declaration-property-value-blacklist": {},
-    "declaration-property-value-whitelist": {},
     "font-family-name-quotes": "always-where-required"|"always-where-recommended"|"always-unless-keyword",
     "font-family-no-duplicate-names": true,
     "font-weight-notation": "numeric"|"named",
