@@ -58,10 +58,7 @@ module.exports = {
       ]
     }],
     "declaration-no-important": true,
-    "font-family-name-quotes": "always-where-required"|"always-where-recommended"|"always-unless-keyword",
     "font-family-no-duplicate-names": true,
-    "font-weight-notation": "numeric"|"named",
-    "function-blacklist": string|[],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always"|"always-multi-line"|"never-multi-line",
     "function-comma-newline-before": "always"|"always-multi-line"|"never-multi-line",
