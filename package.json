@@ -16,5 +16,9 @@
     "mediba"
   ],
   "author": "Yu Kanamori",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^19.0.2"
+  }
 }
