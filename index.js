@@ -96,7 +96,11 @@ module.exports = {
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "property-case": "lower",
-    "property-no-unknown": true,
+    "property-no-unknown": [true, {
+      ignoreProperties: [
+        'composes',
+      ],
+    }],
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": ["always-multi-line", {
       except: "first-nested",
@@ -115,7 +119,14 @@ module.exports = {
     "selector-no-universal": true,
     "selector-no-vendor-prefix": true,
     "selector-pseudo-class-case": "lower",
-    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      ignorePseudoClasses: [
+        'export',
+        'import',
+        'global',
+        'local',
+      ]
+    }],
     "selector-pseudo-class-parentheses-space-inside": "never",
     "selector-pseudo-element-case": "lower",
     "selector-pseudo-element-colon-notation": "double",
