@@ -4,6 +4,7 @@
   "description": "A stylelint config at mediba",
   "main": "index.js",
   "scripts": {
+    "release": "npmpub",
     "test": "jest",
     "watch": "jest --watch"
   },
@@ -20,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^19.0.2",
+    "npmpub": "^3.1.0",
     "stylelint": "^7.9.0"
   },
   "peerDependencies": {
