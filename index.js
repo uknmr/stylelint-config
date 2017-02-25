@@ -57,7 +57,6 @@ module.exports = {
         "inside-single-line-block",
       ],
     }],
-    "declaration-no-important": true,
     "font-family-no-duplicate-names": true,
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
