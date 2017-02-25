@@ -19,6 +19,9 @@
   ],
   "author": "Yu Kanamori",
   "license": "MIT",
+  "dependencies": {
+    "stylelint-order": "^0.3.0"
+  },
   "devDependencies": {
     "jest": "^19.0.2",
     "npmpub": "^3.1.0",
