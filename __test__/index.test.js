@@ -1,28 +1,17 @@
 'use strict'
 
-const config = require('../')
+const { resolve } = require('path')
+const { readFileSync } = require('fs')
 const stylelint = require('stylelint')
-
-const validCss = (`
-@import url(hoge.css);
-
-/* Some comment
- * ----- */
-.hoge {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-`)
-
-const invalidCss = (`
-hoge {
-
-  padding: .3em
-}
-`)
+const config = require('../')
 
 describe('no warnings with valid css', () => {
-  let result
+  let validCss
+  beforeAll(() => {
+    validCss = readFileSync(resolve(__dirname, 'valid.pcss'), 'utf-8')
+  })
 
+  let result
   beforeEach(() => {
     result = stylelint.lint({
       code: validCss,
@@ -49,8 +38,12 @@ describe('no warnings with valid css', () => {
 })
 
 describe('warnings with invalid css', () => {
-  let result
+  let invalidCss
+  beforeAll(() => {
+    invalidCss = readFileSync(resolve(__dirname, 'invalid.pcss'), 'utf-8')
+  })
 
+  let result
   beforeEach(() => {
     result = stylelint.lint({
       code: invalidCss,
