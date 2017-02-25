@@ -1,3 +1,7 @@
+# 0.2.1
+
+- Removed: `declaration-no-important`.
+
 # 0.2.0
 
 - Added: poor test.
