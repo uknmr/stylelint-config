@@ -1,7 +1,96 @@
 @import url(hoge.css);
+@import url(fuga.css);
+
+:root {
+  --font-size: 16px;
+  --font-size-M: var(--font-size);
+
+  /* font-size too big */
+  --font-size-L: 32px;
+}
 
 /* Some comment
  * ----- */
 .hoge {
+  color: #ccc;
   background-color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: '';
+    display: inline-block;
+  }
+
+  /* and hoge */
+  & + & {
+    border-top: 1px solid #fffff0;
+  }
+
+  @media (min-width > 35em) {
+    border-top-width: 3px;
+  }
+}
+
+.hoge-x,
+.hoge-y {
+  position: absolute;
+  font-family: helvetica, 'arial black', serif;
+}
+
+.hoge-1 { width: 25%; }
+.hoge-2 { width: 50%; }
+
+.hoge-3 {
+  composes: hoge-1;
+
+  :global {
+    [type='checkbox'] {
+      color: hsl(0, 0, 0);
+    }
+  }
+}
+
+.hoge-a:not(:last-child) {
+  margin-top: 0 !important;
+}
+
+.fuga {
+  margin: 0.2em auto 2em;
+  padding: 0;
+  padding-right: 100%;
+  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: bold;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      #fff 30%,
+      #000
+    );
+}
+
+.puyo {
+  max-width: calc(100% + var(--gap) * 2);
+  background: linear-gradient(45deg, #fff, #000);
+  box-shadow:
+    0 0 1px 0 rgba(0, 0, 0, 0.5),
+    0 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+@media (min-resolution: 96dpi), screen and (min-width: 50vw) {
+  .fofo {
+    transform: translate3d(0, 0, -100%);
+
+    & + .fofo {
+      margin-top: 0;
+    }
+  }
+}
+
+@@media
+  (min-width: 640),
+  (max-width: 2048px) {
+  .oyon {
+    height: 50vh;
+  }
 }
