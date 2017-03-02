@@ -1,3 +1,7 @@
+# 0.3.0
+
+- Added: stylelint-order.
+
 # 0.2.1
 
 - Removed: `declaration-no-important`.
