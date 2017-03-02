@@ -12,12 +12,16 @@
 /* Some comment
  * ----- */
 .hoge {
-  color: #ccc;
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex: none;
   background-color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
 
   &::before {
-    content: '';
     display: inline-block;
+    content: '';
   }
 
   /* and hoge */
@@ -55,11 +59,6 @@
 
 .fuga {
   margin: 0.2em auto 2em;
-  padding: 0;
-  padding-right: 100%;
-  font-size: 1.2rem;
-  font-size: 18px;
-  font-weight: bold;
   background-image:
     repeating-linear-gradient(
       -45deg,
@@ -67,14 +66,19 @@
       #fff 30%,
       #000
     );
+  padding: 0;
+  padding-right: 100%;
+  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .puyo {
   max-width: calc(100% + var(--gap) * 2);
-  background: linear-gradient(45deg, #fff, #000);
   box-shadow:
     0 0 1px 0 rgba(0, 0, 0, 0.5),
     0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  background: linear-gradient(45deg, #fff, #000);
 }
 
 @media (min-resolution: 96dpi), screen and (min-width: 50vw) {

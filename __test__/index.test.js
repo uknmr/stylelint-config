@@ -32,6 +32,8 @@ describe('no warnings with valid css', () => {
       const { results } = data
       const { warnings } = results[0]
 
+      warnings.length && warnings.forEach(warning => console.log(`${warning.line}: ${warning.text}`))
+
       expect(warnings.length).toBe(0)
     })
   })
@@ -53,7 +55,8 @@ describe('warnings with invalid css', () => {
 
   it('did error', () => {
     return result.then(data => {
-      const { errored } = data
+      const { results, errored } = data
+      const { warnings } = results[0]
 
       expect(errored).toBeTruthy()
     })
