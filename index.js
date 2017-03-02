@@ -1,4 +1,7 @@
 module.exports = {
+  "plugins": [
+    "stylelint-order" ,
+  ],
   "rules": {
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
@@ -94,6 +97,19 @@ module.exports = {
     "no-unknown-animations": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
+    "order/declaration-block-order": [
+      "dollar-variables",
+      "at-variables",
+      "custom-properties",
+      { type: "at-rule", name: "extend" },
+      { type: "at-rule", name: "include" },
+      { type: "at-rule", name: "composes" },
+      "declarations",
+      "rules",
+      "at-rules",
+      { type: "at-rule", name: "media" },
+    ],
+    "order/declaration-block-properties-specified-order": require('./properties-order.js'),
     "property-case": "lower",
     "property-no-unknown": [true, {
       ignoreProperties: [
