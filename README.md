@@ -7,7 +7,7 @@ npm: [![npm version](https://badge.fury.io/js/stylelint-config-mediba.svg)](http
 ## Installation:
 
 ```bash
-$ yarn add stylelint-config-mediba --devDependencies
+$ yarn add stylelint-config-mediba --dev
 ```
 
 ## Usage:
