@@ -9,7 +9,7 @@ module.exports = [
   "z-index",
   "box-sizing",
   "display",
-  "flex-direction", // flex と flex-flow 禁止にしたい
+  "flex-direction",
   "flex-wrap",
   "align-items",
   "align-content",
@@ -89,7 +89,7 @@ module.exports = [
   "broder-image-outset",
   "broder-image-repeat",
   "box-shadow",
-  "background", // WARNINGS これ禁止にしちゃおうかな
+  "background",
   "background-color",
   "background-image",
   "filter",
@@ -111,7 +111,7 @@ module.exports = [
   "height",
   "min-height",
   "max-height",
-  "font", // WARNINGS これ禁止にしちゃおうかな
+  "font",
   "font-family",
   "font-size",
   "font-style",

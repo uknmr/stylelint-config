@@ -110,6 +110,12 @@ module.exports = {
       { type: "at-rule", name: "media" },
     ],
     "order/declaration-block-properties-specified-order": require('./properties-order.js'),
+    "property-blacklist": [
+      "flex",
+      "flex-flow",
+      "background",
+      "font",
+    ],
     "property-case": "lower",
     "property-no-unknown": [true, {
       ignoreProperties: [
