@@ -1,3 +1,7 @@
+# 0.4.0
+
+- Added: property-blacklist
+
 # 0.3.0
 
 - Added: stylelint-order.
