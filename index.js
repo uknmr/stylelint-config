@@ -106,7 +106,6 @@ module.exports = {
       { type: "at-rule", name: "composes" },
       "declarations",
       "rules",
-      "at-rules",
       { type: "at-rule", name: "media" },
     ],
     "order/declaration-block-properties-specified-order": require('./properties-order.js'),
