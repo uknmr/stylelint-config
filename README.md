@@ -23,4 +23,28 @@ Set your `stylelint` config.
 }
 ```
 
+## With stylefmt:
+
+```bash
+$ yarn add stylefmt --dev
+```
+
+```bash
+$ ./node_modules/.bin/stylefmt --help
+```
+
+### Editor plugins:
+
+- [For Sublime Text](https://github.com/dmnsgn/sublime-stylefmt)
+- [For Atom](https://github.com/1000ch/atom-stylefmt)
+- [For Vim](https://github.com/kewah/vim-stylefmt)
+- [For VS Code](https://github.com/mrmlnc/vscode-stylefmt)
+
+### Task Runner plugins:
+
+- [For Gulp](https://github.com/morishitter/gulp-stylefmt)
+- [For Webpack](https://github.com/tomasAlabes/stylefmt-loader)
+
+As you like.
+
 # }
