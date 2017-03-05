@@ -1,3 +1,7 @@
+# 0.5.0
+
+- Added: fill/stroke to properties-order
+
 # 0.4.0
 
 - Added: property-blacklist
