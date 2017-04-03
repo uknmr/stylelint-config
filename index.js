@@ -97,7 +97,7 @@ module.exports = {
     "no-unknown-animations": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
-    "order/declaration-block-order": [
+    "order/order": [
       "dollar-variables",
       "at-variables",
       "custom-properties",
@@ -108,7 +108,7 @@ module.exports = {
       "rules",
       { type: "at-rule", name: "media" },
     ],
-    "order/declaration-block-properties-specified-order": require('./properties-order.js'),
+    "order/properties-order": require('./properties-order.js'),
     "property-blacklist": [
       "flex",
       "flex-flow",

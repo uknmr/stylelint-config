@@ -20,7 +20,7 @@
   "author": "Yu Kanamori",
   "license": "MIT",
   "dependencies": {
-    "stylelint-order": "^0.3.0"
+    "stylelint-order": "^0.4.3"
   },
   "devDependencies": {
     "github-release-from-changelog": "^1.2.1",
