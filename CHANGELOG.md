@@ -1,3 +1,8 @@
+# 0.5.1
+
+- Changed: follow change stylelint to v7.10.1
+- Changed: follow change stylelint-order to v0.4.3
+
 # 0.5.0
 
 - Added: fill/stroke to properties-order
