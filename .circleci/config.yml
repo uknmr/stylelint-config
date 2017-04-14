@@ -1,0 +1,44 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:latest
+    working_directory: ~/styleling-config
+    branches:
+      only:
+        - master
+    steps:
+      - checkout
+      - restore_cache:
+          name: キャッシュの復元 - Yarn
+          keys:
+            - yarn-{{ .Branch }}-{{ checksum "package.json" }}
+            - yarn-{{ .Branch }}-
+      - run:
+          name: Yarn のインストール
+          command: |
+            if [ ! -n $(which yarn) ]; then
+              curl -o- -L https://yarnpkg.com/install.sh | bash
+            fi
+      - save_cache:
+          name: キャッシュの保存 - Yarn
+          paths:
+            - ~/.yarn
+          key: yarn-{{ .Branch }}-{{ checksum "package.json" }}
+      - restore_cache:
+          name: キャッシュの復元 - npm dependencies
+          keys:
+            - dependencies-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - dependencies-{{ .Branch }}-
+      - run:
+          name: yarn install の実行
+          command: yarn
+      - save_cache:
+          name: キャッシュの保存 - npm dependencies
+          paths:
+            - ~/.cache/yarn
+            - ./node_modules
+          key: dependencies-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: テスト実行
+          command: yarn test

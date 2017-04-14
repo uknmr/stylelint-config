@@ -2,6 +2,7 @@
 
 **/\* stylelint config at [mediba](http://www.mediba.jp/) \*/**  
 circle-ci: [![CircleCI](https://circleci.com/gh/mediba-system/stylelint-config-mediba.svg?style=svg)](https://circleci.com/gh/mediba-system/stylelint-config-mediba);  
+travis-ci: [![Build Status](https://travis-ci.org/mediba-system/stylelint-config-mediba.svg?branch=master)](https://travis-ci.org/mediba-system/stylelint-config-mediba);  
 npm: [![npm version](https://badge.fury.io/js/%40mediba%2Fstylelint-config-mediba.svg)](https://badge.fury.io/js/%40mediba%2Fstylelint-config-mediba);
 
 ## Installation:
@@ -16,7 +17,7 @@ Set your `stylelint` config.
 
 ```js
 {
-  "extends": "stylelint-config-mediba",
+  "extends": "@mediba/stylelint-config-mediba",
   "rules": {
     // If you customize rules, override here.
   }
