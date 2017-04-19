@@ -15,7 +15,7 @@ describe('no warnings with valid css', () => {
   beforeEach(() => {
     result = stylelint.lint({
       code: validCss,
-      config
+      config,
     })
   })
 
@@ -32,7 +32,10 @@ describe('no warnings with valid css', () => {
       const { results } = data
       const { warnings } = results[0]
 
-      warnings.length && warnings.forEach(warning => console.log(`${warning.line}: ${warning.text}`))
+      warnings.length &&
+        warnings.forEach(warning =>
+          console.log(`${warning.line}: ${warning.text}`),
+        )
 
       expect(warnings.length).toBe(0)
     })
@@ -49,7 +52,7 @@ describe('warnings with invalid css', () => {
   beforeEach(() => {
     result = stylelint.lint({
       code: invalidCss,
-      config
+      config,
     })
   })
 
