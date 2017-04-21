@@ -1,3 +1,10 @@
+# 1.0.0
+
+- Changed: rename @mediba/stylelint-config-mediba to @mediba/stylelint-config
+- Added: Travis CI
+- Changed: CircleCI to v2.0
+- Added: use Prettier
+
 # 0.5.1
 
 - Changed: follow change stylelint to v7.10.1
