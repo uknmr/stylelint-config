@@ -1,3 +1,8 @@
+# 1.1.0
+
+- Changed: follow change stylelint to v7.11.1
+- Changed: follow change stylelint-order to v0.5.0
+
 # 1.0.0
 
 - Changed: rename @mediba/stylelint-config-mediba to @mediba/stylelint-config
