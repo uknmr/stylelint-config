@@ -70,6 +70,17 @@
   font-size: 1.2rem;
   font-size: 18px;
   font-weight: bold;
+
+  &.fuga {
+    background-color: white;
+
+    /* class は最大2つまで（ほんとは1つにしたいくらい） */
+    /* stylelint-disable selector-max-class */
+    > .piyo {
+      color: pink;
+    }
+    /* stylelint-enable selector-max-class */
+  }
 }
 
 .puyo {
