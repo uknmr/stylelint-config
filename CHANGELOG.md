@@ -1,3 +1,8 @@
+# 3.0.0
+
+- Changed: follow change stylelint to v9.1.1
+- Changed: follow change stylelint-order to v0.8.1
+
 # 2.2.0
 
 - Changed: follow change stylelint to v8.4.0
