@@ -1,3 +1,8 @@
+# 3.1.0
+
+- Changed: follow change stylelint to v9.2.0
+- Added: `selector-max-pseudo-class` rule to `1`
+
 # 3.0.0
 
 - Changed: follow change stylelint to v9.1.1
