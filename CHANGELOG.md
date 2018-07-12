@@ -1,3 +1,8 @@
+# 3.2.0
+
+- Changed: follow change stylelint to v9.3.0
+- Fixed: remove the cause for postcss-sorting warning
+
 # 3.1.0
 
 - Changed: follow change stylelint to v9.2.0
