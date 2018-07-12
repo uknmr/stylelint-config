@@ -108,12 +108,20 @@ module.exports = {
       'dollar-variables',
       'at-variables',
       'custom-properties',
-      { type: 'at-rule', name: 'extend' },
-      { type: 'at-rule', name: 'include' },
-      { type: 'at-rule', name: 'composes' },
+      {
+        type: 'at-rule',
+        name: 'extend'
+      },
+      {
+        type: 'at-rule',
+        name: 'composes'
+      },
       'declarations',
       'rules',
-      { type: 'at-rule', name: 'media' },
+      {
+        type: 'at-rule',
+        name: 'media'
+      }
     ],
     'order/properties-order': require('./properties-order.js'),
     'property-blacklist': ['flex', 'flex-flow', 'background', 'font'],
