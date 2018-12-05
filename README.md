@@ -3,7 +3,8 @@
 **/\* stylelint config at [mediba](http://www.mediba.jp/) \*/**  
 circle-ci: [![CircleCI](https://circleci.com/gh/mediba-system/stylelint-config.svg?style=svg)](https://circleci.com/gh/mediba-system/stylelint-config);  
 travis-ci: [![Build Status](https://travis-ci.org/mediba-system/stylelint-config.svg?branch=master)](https://travis-ci.org/mediba-system/stylelint-config);  
-npm: [![npm version](https://badge.fury.io/js/%40mediba%2Fstylelint-config.svg)](https://badge.fury.io/js/%40mediba%2Fstylelint-config);
+npm: [![npm version](https://badge.fury.io/js/%40mediba%2Fstylelint-config.svg)](https://badge.fury.io/js/%40mediba%2Fstylelint-config);  
+dev: [![@mediba/stylelint-config Dev Token](https://badge.devtoken.rocks/@mediba/stylelint-config)](https://devtoken.rocks/package/@mediba/stylelint-config);
 
 ## Installation:
 
